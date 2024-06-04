@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F4E1;
+    padding-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.title {
+    padding: 20px;
+}
+
+.box {
+    padding-top: 50px;
+    background-color: #AF8F6F;
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: Ansage, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(230, 227, 227);
+    border-radius: 30px;
+}
+
+.row-container {
+    padding: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    background: rgb(186, 180, 180);
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
+button.addTask {
+    padding: 16px 50px;
+    font-size: 16px;
+}
+
+button.menu {
+    font-size: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+ul li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;           
+    list-style: none;
+    font-size: 15px;    
+    color: #46280b;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    left: 40px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: -25px;
+}
+
+ul li.checked {
+    color: #46280b;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 70px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #46280b;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: rgb(211, 207, 207);
+}
